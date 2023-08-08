@@ -120,6 +120,7 @@ MOREL K DATA ANALYST
 								<ul class="actions">
 									<li><button onclick="sendmail();" class="primary">Envoyer</button></li>
 									
+								
 								</ul>
 								
 								</ul>
@@ -142,7 +143,7 @@ var serviceID = "service_uhbdzen";
 var templateID = "template_8bp4iss";
 
 emailjs.send(serviceID, templateID, params)
-.then( res => {
+.then( res => { 
     alert ("MESSAGE ENVOYE");
 })
 }
