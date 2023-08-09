@@ -62,7 +62,7 @@ MOREL K DATA ANALYST
 								<span class="image main"><img src="images/cohort.jpg" alt="" /></span> 
 								<span class="image main"><img src="images/cohort1.png" alt="" /></span>
 								<p>Cette étude consistait à déterminer le taux de fidélisation et de désabonnement de la clientèle d'une entreprise sur un temps donné (1an dans notre cas)</p>
-								<center><p> <a href="https://app.powerbi.com/view?r=eyJrIjoiZjFlN2Q1ZjYtNDIxMC00ZmIxLTk3MjctODA3MDE4Y2ZjZTE3IiwidCI6IjA5ODlkZmY4LTA4ZTQtNGE2Ny1hYzNhLTYyZTkzOWVjY2VmZCJ9">LIEN DE LA COHORTE</a></p>
+								<center><p> <a href="https://github.com/Morelkdata/CohortAnalyse/blob/main/COHORT%20INDICE.sql">LIEN DE LA COHORTE</a></p>
 								</center>
 
 								<H3>Analyse RFM SQL & TABLEAU (AVRIL 2023)</H3>
@@ -95,9 +95,8 @@ MOREL K DATA ANALYST
 									</article>
 
 						<!-- Contact -->
-					
 						<article id="contact">
-							<h2 class="major">ME CONTACTER</h2>
+							<h2 class="major">Contact</h2>
 							
 								<div class="fields">
 									<div class="field half">
@@ -105,24 +104,19 @@ MOREL K DATA ANALYST
 										<input type="text" name="name" id="name" />
 									</div>
 									<div class="field half">
-										<p></p>
 										<label for="email">Email</label>
 										<input type="text" name="email" id="email" />
-										
 									</div>
-									<p></p>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
-								<P></P>
-								<ul class="actions">
-									<li><button onclick="sendmail();" class="primary">Envoyer</button></li>
+								<ul class=" boxmail" >
 									
-								
-								</ul>
-								
+									<button onclick="sendmail();" id="sent-click"><span>ENVOYER</span></button>
+									<li><input type="reset" value="Effacer" id="reset_click"/></li>
+									
 								</ul>
 									</ul>
 										<script>function sendmail(){
@@ -143,18 +137,19 @@ var serviceID = "service_uhbdzen";
 var templateID = "template_8bp4iss";
 
 emailjs.send(serviceID, templateID, params)
-.then( res => { 
+.then( res => {
     alert ("MESSAGE ENVOYE");
 })
+
 }
 </script>
 									
 								</form>
 								<ul class="icons">
 									<center>
-									<li><a href="https://www.linkedin.com/in/morelkouadio/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://instagram.com/mkmorel/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/Morelkdata/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/morelkouadio/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://instagram.com/mkmorel/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Morelkdata/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</center>
 								</ul>
 						
@@ -167,12 +162,15 @@ emailjs.send(serviceID, templateID, params)
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">&copy;Portfolio <a href="index.html">Morel K. Analyst</a>.</p>
+
 					</footer>
 
 			</div>
 
 		<!-- BG -->
 			<div id="bg"></div>
+
+			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
